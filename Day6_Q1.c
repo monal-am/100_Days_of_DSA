@@ -16,4 +16,23 @@ Output:
 1 2 3
 
 Explanation: Keep first occurrence of each element: 1, 2, 3*/
+#include <stdio.h>
+int main() {
+int n,j=0;
+scanf("%d",&n);
+int arr[n],final[n];
+for(int i=0;i<n;i++) {
+    scanf("%d", &arr[i]);
+}
+for(int i=0;i<n-1;i++) {
+    if(arr[i]!=arr[i+1]) {
+        final[j]=arr[i];
+        j++;
+    }
+}
+for(int i=0;i<=j;i++) {
+    printf("%d ",final[i]);
+}
+    return 0;
+}
 
