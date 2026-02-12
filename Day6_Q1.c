@@ -16,6 +16,7 @@ Output:
 1 2 3
 
 Explanation: Keep first occurrence of each element: 1, 2, 3*/
+
 #include <stdio.h>
 int main() {
 int n,j=0;
